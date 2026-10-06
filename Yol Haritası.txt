@@ -1,0 +1,67 @@
+Afet ve Kriz Ani Merkezi Lojistik, Gönüllü ve Tahliye Yönetim Sistemi - Yol Haritası
+Hafta 1 — Veritabanı Tasarımı ve SQL Server
+ER Şeması: İlişkisel veri modelinin kurgulanması.
+
+Tablo Mimarisi: 21 ana ve ilişki tablosunun oluşturulması.
+
+İlişkiler ve Kısıtlamalar: Primary Key (PK), Foreign Key (FK) bağları, CHECK ve DEFAULT kısıtlamaları.
+
+Test Verileri: Sistem altyapısını besleyecek örnek dummy verilerin eklenmesi ve SQL scriptlerinin GitHub'a yüklenmesi.
+
+Hafta 2 — C# Altyapısı
+Proje Yapısı: C# WinForms üzerinde katmanlı mimarinin temellerinin atılması.
+
+Bağlantı Altyapısı: SQL Server bağlantı yönetim sınıfının (SqlConnection) yazılması.
+
+Bağlantı Testi: Veritabanı erişim ve test işlemlerinin tamamlanması (giriş ekranı kapsam dışı bırakılarak doğrudan kriz yönetimine odaklanılması).
+
+Hafta 3 — Temel Tanımlamalar
+Afetler & Bölgeler: Afet kayıtları ve etkilenen coğrafi bölgelerin tanımlanması.
+
+Depo ve Ürünler: Lojistik depoların, ürün kategorilerinin ve ürün envanterinin sisteme kazandırılması.
+
+Temel CRUD: Bu modüller için ekleme, silme, güncelleme ve listeleme arayüzlerinin kodlanması.
+
+Hafta 4 — Gönüllü ve Araç Yönetimi
+Gönüllü Havuzu: Gönüllülerin kaydı ve uzmanlık alanları (yetkinlikler).
+
+Eşleştirme: Gönüllü-yetkinlik eşleştirme mantığının kurulması.
+
+Filo Takibi: Araç envanteri ve araçların görev durumlarının takibi.
+
+Hafta 5 — Talep Yönetimi
+Afetzede Talepleri: Sahadan gelen yardım taleplerinin ve detay kalemlerinin sisteme girişi.
+
+Önceliklendirme: Taleplere aciliyet/öncelik seviyelerinin atanması.
+
+Operatör Ekranı: Açık taleplerin, karşılanan taleplerin ve operasyon durumunun izlendiği yönetim paneli.
+
+Hafta 6 — Stok ve Bağış Yönetimi
+Depo Stokları: Depo bazlı ürün miktarları ve kritik stok eşiklerinin takibi.
+
+Bağışçılar & Bağışlar: Bireysel/kurumsal bağışçı kayıtları ve bağış detayları.
+
+Otomatik Stok Artırma: Bağış girişi yapıldığında ilgili deponun stok miktarını tetikleyen mimari.
+
+Hafta 7 — Sevkiyat ve Yol Yönetimi
+Sevkiyat Planlama: Sevkiyat, detaylar, araç ve gönüllü atama süreçleri.
+
+Güzergah ve Yol Durumları: Kapalı veya riskli yol kontrolü.
+
+Kritik Eşik (SQL Transaction): Stok kontrolü, sevkiyat onayı ve olası hatalarda veri bütünlüğünü korumak için Transaction + Rollback yapısının kurulması.
+
+Hafta 8 — Tahliye ve Saha Operasyonları
+Toplanma Merkezleri: Merkezlerin kapasite ve mevcut kişi sayısı takibi.
+
+Tahliye Kayıtları: Vatandaşların güvenli bölgelere/merkezlere tahliye süreçlerinin işlenmesi.
+
+Saha Görevlendirmeleri: Gönüllü ve araçların operasyon alanlarına koordine edilmesi.
+
+Hafta 9 — Karar Destek, Dashboard ve Test
+Algoritmalar: Talep önceliklendirme algoritması.
+
+Analitik Raporlar: Kritik stok analizi, açık talep raporları ve kapalı yol analizleri.
+
+Yönetici Paneli (Dashboard): Tüm kriz durumunu tek ekrandan gösteren özet arayüz.
+
+Senaryo Testleri: 3-4 farklı gerçekçi afet senaryosu ile uçtan uca sistem testi, performans karşılaştırmaları ve son rötuşlar.
